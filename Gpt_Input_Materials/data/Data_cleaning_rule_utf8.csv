@@ -1,0 +1,47 @@
+,variables,explanation,Action
+0,match_id,match identification,
+1,player1,first and last name of the first player,
+2,player2,first and last name of the second player,
+3,elapsed_time,time elapsed since start of first point to start of current point (H:MM:SS),
+4,set_no,set number in match,检查是否为整数
+5,game_no,game number in set,检查是否为整数并且小于7
+6,point_no,point number in game,检查是否为顺序整数
+7,p1_sets,sets won by player 1,检查是否都为0/1/2
+8,p2_sets,sets won by player 2,检查是否都为0/1/2
+9,p1_games,games won by player 1 in current set,检查是否为整数且顺序
+10,p2_games,games won by player 2 in current set,检查是否为整数且顺序
+11,p1_score,player 1's score within current game,更改AD为666、检查是都为0/15/30/40/666
+12,p2_score,player 2's score within current game,更改AD为666、检查是都为0/15/30/40/666
+13,server,server of the point,检查是否都为1/2
+14,serve_no,first or second serve,检查是否都为1/2
+15,point_victor,winner of the point,检查是否都为1/2
+16,p1_points_won,number of points won by player 1 in match,检查是否为整数
+17,p2_points_won,number of points won by player 2 in match,检查是否为整数
+18,game_victor,a player won a game this point,检查是否为0/1/2
+19,set_victor,a player won a set this point,检查是否为0/1/2
+20,p1_ace,player 1 hit an untouchable winning serve,检查是否为0/1
+21,p2_ace,player 2 hit an untouchable winning serve,检查是否为0/1
+22,p1_winner,player 1 hit an untouchable winning shot,检查是否为0/1
+23,p2_winner,player 2 hit an untouchable winning shot,检查是否为0/1
+24,winner_shot_type,category of untouchable shot,更改F为1，B为0，检查是否为1，0
+25,p1_double_fault,player 1 missed both serves and lost the point,检查是否为0/1
+26,p2_double_fault,player 2 missed both serves and lost the point,检查是否为0/2
+27,p1_unf_err,player 1 made an unforced error,检查是否为0/3
+28,p2_unf_err,player 2 made an unforced error,检查是否为0/4
+29,p1_net_pt,player 1 made it to the net,检查是否为0/5
+30,p2_net_pt,player 2 made it to the net,检查是否为0/6
+31,p1_net_pt_won,player 1 won the point while at the net,检查是否为0/7
+32,p2_net_pt_won,player 2 won the point while at the net,检查是否为0/8
+33,p1_break_pt,player 1 has an opportunity to win a game player 2 is serving,检查是否为0/9
+34,p2_break_pt,player 2 has an opportunity to win a game player 1 is serving,检查是否为0/10
+35,p1_break_pt_won,player 1 won the game player 2 is serving,检查是否为0/11
+36,p2_break_pt_won,player 2 won the game player 1 is serving,检查是否为0/12
+37,p1_break_pt_missed,player 1 missed an opportunity to win a game player 2 is serving,检查是否为0/13
+38,p2_break_pt_missed,player 2 missed an opportunity to win a game player 1 is serving,检查是否为0/14
+39,p1_distance_run,player 1's distance ran during point (meters),检查是否都为正数、异常值检查
+40,p2_distance_run,player 2's distance ran during point (meters),检查是否都为正数、异常值检查
+41,rally_count,number of shots during the point,检查是否为正整数
+42,speed_mph,speed of serve (miles per hour; mph), 检查是否为正整数
+43,serve_width,direction of serve,变量变更为B:1、BC:2、BW:3、C:4、W:5
+44,serve_depth,depth of serve,变量变更为CTL:1、NCTL:2
+45,return_depth,depth of return,变量变更为D：1、ND：2
